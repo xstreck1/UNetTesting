@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PersistentObject : MonoBehaviour {
     public static PersistentObject Singleton { get; private set; }
-    public int SceneCount { get; private set; }
+    // Assign via inspector
+    public StateNetworkData networkData = null;
 
     private void Awake()
     {
@@ -34,7 +35,6 @@ public class PersistentObject : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        SceneCount = 0;
     }
 	
 	// Update is called once per frame
@@ -44,7 +44,6 @@ public class PersistentObject : MonoBehaviour {
 
     void OnLevelLoaded(Scene scene, LoadSceneMode mode)
     {
-        SceneCount += 1;
+        Logger.Log("Scene loaded");
     }
-
 }

@@ -2029,7 +2029,7 @@ RectTransform:
   - {fileID: 564994470}
   - {fileID: 841346712}
   m_Father: {fileID: 1256901186}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
@@ -2144,9 +2144,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1781025140}
-  - {fileID: 2094225293}
   - {fileID: 1231753304}
   - {fileID: 1890311814}
+  - {fileID: 2094225293}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2348,7 +2348,7 @@ Prefab:
     - target: {fileID: 224917880863818528, guid: deb681fe637869b4b932e12d4a5ea113,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224917880863818528, guid: deb681fe637869b4b932e12d4a5ea113,
         type: 2}
@@ -2400,7 +2400,13 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 224701195680615920, guid: deb681fe637869b4b932e12d4a5ea113,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114333357756905578, guid: deb681fe637869b4b932e12d4a5ea113, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: deb681fe637869b4b932e12d4a5ea113, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1434232746
@@ -2980,7 +2986,7 @@ RectTransform:
   - {fileID: 170869847}
   - {fileID: 1891719593}
   m_Father: {fileID: 1256901186}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}

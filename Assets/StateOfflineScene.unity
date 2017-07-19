@@ -408,7 +408,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 274330203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a11f655a713648f45841a937b6d0c0ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 431fc0f2444f71a4e8becac9f74caa71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &432887574
@@ -577,7 +577,6 @@ GameObject:
   m_Component:
   - component: {fileID: 681491698}
   - component: {fileID: 681491699}
-  - component: {fileID: 681491700}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -629,17 +628,6 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
---- !u!114 &681491700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 681491697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e930824ae2255b145b27958b3d101b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &711523122
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,35 +788,35 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4356974919223316, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
+    - target: {fileID: 4912810924799578, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 898
       objectReference: {fileID: 0}
-    - target: {fileID: 4356974919223316, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
+    - target: {fileID: 4912810924799578, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
       propertyPath: m_LocalPosition.y
       value: 404
       objectReference: {fileID: 0}
-    - target: {fileID: 4356974919223316, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
+    - target: {fileID: 4912810924799578, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4356974919223316, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
+    - target: {fileID: 4912810924799578, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4356974919223316, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
+    - target: {fileID: 4912810924799578, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4356974919223316, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
+    - target: {fileID: 4912810924799578, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4356974919223316, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
+    - target: {fileID: 4912810924799578, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4356974919223316, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
+    - target: {fileID: 4912810924799578, guid: 44afb01ac93f14e41bb24b4076f1bd3e, type: 2}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
@@ -1396,8 +1384,8 @@ MonoBehaviour:
   m_PlayerPrefab: {fileID: 0}
   m_AutoCreatePlayer: 0
   m_PlayerSpawnMethod: 0
-  m_OfflineScene: 0 OfflineScene
-  m_OnlineScene: 1 OnlineScene
+  m_OfflineScene: StateOfflineScene
+  m_OnlineScene: StateOnlineScene
   m_SpawnPrefabs: []
   m_CustomConfig: 0
   m_MaxConnections: 4
@@ -1795,6 +1783,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2119126939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a11f655a713648f45841a937b6d0c0ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 27c331bfb01c88e4b93e2a707acddd6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
