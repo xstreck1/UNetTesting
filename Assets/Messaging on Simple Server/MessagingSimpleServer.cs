@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class MySimpleServer : NetworkServerSimple
+public class MessagingSimpleServer : NetworkServerSimple
 {
     public void ReceiveMessage()
     {

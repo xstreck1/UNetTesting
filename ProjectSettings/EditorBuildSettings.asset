@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Messaging on Simple Server/MessagingScene.unity
+    guid: 6d2ccc778a65a8f4590e2fb63befd366
+  - enabled: 1
+    path: Assets/State and Persistance/0 OfflineScene.unity
+    guid: 4262f4996a9044b4fa113487afa36588
+  - enabled: 1
+    path: Assets/State and Persistance/1 OnlineScene.unity
+    guid: ecea838f98ac30c4485e3f08e807d3e2
+  - enabled: 1
+    path: Assets/State and Persistance/2 OnlineScene.unity
+    guid: 33588007edd0aee4eb7bb864ecc14984

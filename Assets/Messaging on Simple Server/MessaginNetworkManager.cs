@@ -14,7 +14,7 @@ public class ServerPing : MessageBase
 {
 }
 
-public class MyNetworkManager : MonoBehaviour
+public class MessagingNetworkManager : MonoBehaviour
 {
     public Text maxConnectionsField = null;
     private int MaxConnections { get { return maxConnectionsField.text == "" ? 8 : Int32.Parse(maxConnectionsField.text); } }
@@ -31,7 +31,7 @@ public class MyNetworkManager : MonoBehaviour
     private int reliabelChannelID = -1;
     private int unreliableChannelID = -1;
 
-    MySimpleServer myServer;
+    MessagingSimpleServer myServer;
     NetworkClient myClient;
 
     public void Update()
@@ -66,7 +66,7 @@ public class MyNetworkManager : MonoBehaviour
             KillServer();
         }
 
-        myServer = new MySimpleServer();
+        myServer = new MessagingSimpleServer();
         myServer.Configure(MakeConfig(), MaxConnections);
         bool listening = myServer.Listen(serverIP, serverPort);
 
