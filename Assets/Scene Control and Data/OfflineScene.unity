@@ -848,17 +848,17 @@ Prefab:
     - target: {fileID: 224917880863818528, guid: deb681fe637869b4b932e12d4a5ea113,
         type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 224917880863818528, guid: deb681fe637869b4b932e12d4a5ea113,
         type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 224917880863818528, guid: deb681fe637869b4b932e12d4a5ea113,
         type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 224917880863818528, guid: deb681fe637869b4b932e12d4a5ea113,
         type: 2}
@@ -868,7 +868,7 @@ Prefab:
     - target: {fileID: 224917880863818528, guid: deb681fe637869b4b932e12d4a5ea113,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224917880863818528, guid: deb681fe637869b4b932e12d4a5ea113,
         type: 2}
@@ -923,7 +923,7 @@ Prefab:
     - target: {fileID: 224701195680615920, guid: deb681fe637869b4b932e12d4a5ea113,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: deb681fe637869b4b932e12d4a5ea113, type: 2}

@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class Logger : MonoBehaviour {
 
     public static Logger Singleton;
-    Text text;
-    
+    Text text;    
 
     private void Awake()
     {
@@ -19,5 +18,6 @@ public class Logger : MonoBehaviour {
     static public void Log(string text)
     {
         Singleton.text.text += DateTime.UtcNow.ToString("HH:mm:ss.ffff") + " " + text + "\n";
+        Debug.Log(text);
     }
 }
