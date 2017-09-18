@@ -21,7 +21,12 @@ namespace Matchmaker
             {
                 if (matches.Count != 0)
                 {
-                    Logger.Log(matches[0].ToString());
+                    for (int i = 0; i < matches.Count; i++)
+                    {
+                        string info = "Name: " + matches[i].name + ", networkID: " + matches[i].networkId;
+                        Logger.Log("Match " + i + ": " + info);
+
+                    }      
                 }
                 else
                 {

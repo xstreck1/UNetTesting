@@ -10,10 +10,12 @@ namespace Messaging
 {
     public class ClientPing : MessageBase
     {
+
     }
 
     public class ServerPing : MessageBase
     {
+
     }
 
     public class MyNetworkManager : MonoBehaviour
@@ -82,6 +84,7 @@ namespace Messaging
                 myServer.RegisterHandler(MsgType.Connect, OnServerConnected);
                 myServer.RegisterHandler(MsgType.Disconnect, OnServerDisconnected);
                 myServer.RegisterHandler(MsgType.Error, OnServerError);
+                myServer.RegisterHandler(MsgType.Ready, OnServerReady);
 
                 serverIndicator.color = Color.green;
             }
@@ -124,6 +127,8 @@ namespace Messaging
                 myClient.RegisterHandler(MsgType.Error, OnClientError);
 
                 Logger.Log("Connecting to " + WholeAddress);
+
+                clientIndicator.color = new Color(255, 127, 80);
             }
         }
 
@@ -152,12 +157,13 @@ namespace Messaging
             }
         }
 
-        public void SendClientPing()
+        public void SendClientReady()
         {
             if (myClient != null && !UseTransportLayer)
             {
-                ClientPing msg = new ClientPing();
-                myClient.Send(clientPingId, msg);
+                ReadyMessage msg = new ReadyMessage();
+                myClient.Send(MsgType.Ready, msg);
+                clientIndicator.color = Color.green;
             }
         }
 
@@ -218,8 +224,8 @@ namespace Messaging
 
         public void OnClientConnected(NetworkMessage netMsg)
         {
-            clientIndicator.color = Color.green;
-            Logger.Log("Connected to server at: " + netMsg.conn.address);
+            clientIndicator.color = Color.yellow;
+            Logger.Log("Connected to server at: " + netMsg.conn.address + " with RTT: " + myClient.GetRTT());
         }
 
         public void OnClientDisconnected(NetworkMessage netMsg)
@@ -246,6 +252,21 @@ namespace Messaging
         public void OnServerError(NetworkMessage netMsg)
         {
             Logger.Log("Server error: " + netMsg.ReadMessage<ErrorMessage>());
+        }
+
+        public void OnServerReady(NetworkMessage netMsg)
+        {
+            int readyCount = 0;
+            netMsg.conn.isReady = true;
+            foreach (NetworkConnection connIt in myServer.connections)
+            {
+                if (connIt != null && connIt.isReady)
+                {
+                    readyCount++;
+                }
+            }
+
+            Logger.Log("Connection ready on: " + netMsg.conn.address + ". Totally ready: " + readyCount);
         }
     }
 }

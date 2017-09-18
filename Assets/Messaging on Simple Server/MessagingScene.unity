@@ -1458,7 +1458,7 @@ GameObject:
   - component: {fileID: 880278460}
   - component: {fileID: 880278459}
   m_Layer: 5
-  m_Name: Ping
+  m_Name: Ready
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1523,7 +1523,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 199190302}
-        m_MethodName: SendClientPing
+        m_MethodName: SendClientReady
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2362,7 +2362,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ping
+  m_Text: Ready
 --- !u!222 &1287275154
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2545,8 +2545,7 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114333357756905578, guid: deb681fe637869b4b932e12d4a5ea113, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: deb681fe637869b4b932e12d4a5ea113, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1434232746
